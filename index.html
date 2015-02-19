@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settle The Bill | Tip Calculator and Bill Splitter</title>
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap-min.css">
+    <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script> -->
+    <script type="text/javascript" src="split.js"></script>
+</head>
+<body>
+    <h1>Let me settle that bill for you...</h1>
+    <form id="bill-settler" onsubmit="splitBill();">
+        <label>Total</label>
+        <input id="cost" type="number" name="cost"><br>
+        <label>People</label>
+        <input id="people" type="number" name="people"><br>
+        <label>Service Satisfaction</label><br>
+        <select id="serviceLvl">
+            <option value="3">Above Average</option>
+            <option value="2">Average</option>
+            <option value="1">Below Average</option>
+            <option value="0">Dissmal</option>
+        </select><br>
+        <input type="submit" name="split" value="Split Bill">
+    </form>
+</body>
+</html>
